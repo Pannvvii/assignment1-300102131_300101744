@@ -12,7 +12,7 @@
  * @author Dr Timothy C. Lethbridge
  * @version July 2000
  */
-public class PointCP2
+public class PointCP
 {
   //Instance variables ************************************************
 
@@ -40,15 +40,14 @@ public class PointCP2
   /**
    * Constructs a coordinate object, with a type identifier.
    */
-  public PointCP2(char type, double xOrRho, double yOrTheta)
+  public PointCP(char type, double xOrRho, double yOrTheta)
   {
     if(type != 'C' &&  type != 'P')
       throw new IllegalArgumentException();
     this.xOrRho = xOrRho;
     this.yOrTheta = yOrTheta;
-    xOrRho = (Math.sqrt(Math.pow(xOrRho, 2) + Math.pow(yOrTheta, 2)));
-    yOrTheta = Math.toDegrees(Math.atan2(yOrTheta, xOrRho));
-    typeCoord = 'P';
+    convertStorageToPolar();
+    typeCoord = "P";
   }
 	
   
@@ -129,7 +128,7 @@ public class PointCP2
    * @param pointB The second point.
    * @return The distance between the two points.
    */
-  public double getDistance(PointCP2 pointB)
+  public double getDistance(PointCP pointB)
   {
     // Obtain differences in X and Y, sign is not important as these values
     // will be squared later.
@@ -147,13 +146,13 @@ public class PointCP2
    * @param rotation The number of degrees to rotate the point.
    * @return The rotated image of the original point.
    */
-  public PointCP2 rotatePoint(double rotation)
+  public PointCP rotatePoint(double rotation)
   {
     double radRotation = Math.toRadians(rotation);
     double X = getX();
     double Y = getY();
         
-    return new PointCP2('C',
+    return new PointCP('C',
       (Math.cos(radRotation) * X) - (Math.sin(radRotation) * Y),
       (Math.sin(radRotation) * X) + (Math.cos(radRotation) * Y));
   }
