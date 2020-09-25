@@ -106,20 +106,25 @@ public class PointCP2
   /**
    * Converts Polar coordinates to Cartesian coordinates.
    */
-  /*
-  public void convertStorageToCartesian()
+  
+  public PointCP3 convertStorageToCartesian()
   {
     if(typeCoord != 'C')
     {
       //Calculate X and Y
+      
+      double aY;
+      double anX;
       double tempx = getX();
-      Theta = getY();
-      xOrRho = temp;
-   
-      typeCoord = 'C';	//Change coord type identifier
+      aY = getY();
+      anX = temp;
+      
+      PointCP3 yoint = new PointCP3('C', anX, aY);
+      return yoint;
+      //typeCoord = 'C';	//Change coord type identifier
     }
   }
-*/
+
   /**
    * Calculates the distance in between two points using the Pythagorean
    * theorem  (C ^ 2 = A ^ 2 + B ^ 2). Not needed until E2.30.
