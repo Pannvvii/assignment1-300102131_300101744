@@ -46,8 +46,9 @@ public class PointCP2
       throw new IllegalArgumentException();
     this.xOrRho = xOrRho;
     this.yOrTheta = yOrTheta;
-    xOrRho = (Math.sqrt(Math.pow(xOrRho, 2) + Math.pow(yOrTheta, 2)));
-    yOrTheta = Math.toDegrees(Math.atan2(yOrTheta, xOrRho));
+    if(type == 'C')
+      xOrRho = (Math.sqrt(Math.pow(xOrRho, 2) + Math.pow(yOrTheta, 2)));
+      yOrTheta = Math.toDegrees(Math.atan2(yOrTheta, xOrRho));
     typeCoord = 'P';
   }
 	
@@ -73,18 +74,16 @@ public class PointCP2
   
   public double getRho()
   {
-    if(typeCoord == 'P') 
-      return xOrRho;
-    else 
-      return (Math.sqrt(Math.pow(xOrRho, 2) + Math.pow(yOrTheta, 2)));
+
+    return xOrRho;
+
   }
   
   public double getTheta()
   {
-    if(typeCoord == 'P')
-      return yOrTheta;
-    else 
-      return Math.toDegrees(Math.atan2(yOrTheta, xOrRho));
+
+    return yOrTheta;
+
   }
   
 	
