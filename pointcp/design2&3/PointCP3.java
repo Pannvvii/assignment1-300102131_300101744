@@ -91,9 +91,10 @@ public class PointCP3
       double Theta = getTheta();
       double Rho = temp;
       
-      typeCoord = 'P';  //Change coord type identifier
+	  char TempType;
+      TempType = 'P';  //Change coord type identifier
 	  
-		PointCP2 PointNew = new PointCP2(typeCoord, Rho, Theta);
+		PointCP2 PointNew = new PointCP2(TempType, Rho, Theta);
 		return PointNew;
 	
   }
