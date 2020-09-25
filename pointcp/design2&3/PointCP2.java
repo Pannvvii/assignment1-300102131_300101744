@@ -44,15 +44,13 @@ public class PointCP2
   {
     if(type != 'C' &&  type != 'P')
       throw new IllegalArgumentException();
-    
+	if(type == 'P'){
     this.xOrRho = xOrRho;
     this.yOrTheta = yOrTheta;
-    System.out.println(yOrTheta);
-    System.out.println(type);
-    if(type == 'C')
+    }else {
       this.xOrRho = (Math.sqrt(Math.pow(xOrRho, 2) + Math.pow(yOrTheta, 2)));
       this.yOrTheta = Math.toDegrees(Math.atan2(yOrTheta, xOrRho));
-    System.out.println(yOrTheta);
+	}
     typeCoord = 'P';
     System.out.println(yOrTheta);
   }
