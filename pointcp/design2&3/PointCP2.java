@@ -109,8 +109,7 @@ public class PointCP2
   
   public PointCP3 convertStorageToCartesian()
   {
-    if(typeCoord != 'C')
-    {
+    
       //Calculate X and Y
       
       double aY;
@@ -122,7 +121,7 @@ public class PointCP2
       PointCP3 yoint = new PointCP3('C', anX, aY);
       return yoint;
       //typeCoord = 'C';	//Change coord type identifier
-    }
+    
   }
 
   /**
