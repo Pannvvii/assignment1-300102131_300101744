@@ -88,13 +88,16 @@ public class PointCP3
 
       //Calculate RHO and THETA
       double temp = getRho();
-      double Theta = getTheta();
-      double Rho = temp;
+	  double temp2 = getTheta();
+      double yTheta = temp2;
+	  
+      double xRho = temp;
       
 	  char TempType;
       TempType = 'P';  //Change coord type identifier
 	  
-		PointCP2 PointNew = new PointCP2(TempType, Rho, Theta);
+		PointCP2 PointNew = new PointCP2(TempType, xRho, yTheta);
+
 		return PointNew;
 	
   }
@@ -104,7 +107,15 @@ public class PointCP3
    */
   public void convertStorageToCartesian()
   {
-    return;
+    if(typeCoord != 'C')
+    {
+      //Calculate X and Y
+      double temp = getX();
+      yOrTheta = getY();
+      xOrRho = temp;
+   
+      typeCoord = 'C';	//Change coord type identifier
+    }
   }
 
   /**
