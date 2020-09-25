@@ -47,8 +47,8 @@ public class PointCP2
     this.xOrRho = xOrRho;
     this.yOrTheta = yOrTheta;
     if(type == 'C')
-      xOrRho = (Math.sqrt(Math.pow(xOrRho, 2) + Math.pow(yOrTheta, 2)));
-      yOrTheta = Math.toDegrees(Math.atan2(yOrTheta, xOrRho));
+      this.xOrRho = (Math.sqrt(Math.pow(xOrRho, 2) + Math.pow(yOrTheta, 2)));
+      this.yOrTheta = Math.toDegrees(Math.atan2(yOrTheta, xOrRho));
     typeCoord = 'P';
   }
 	
