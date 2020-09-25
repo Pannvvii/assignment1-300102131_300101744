@@ -58,18 +58,12 @@ public class PointCP2
  
   public double getX()
   {
-    if(typeCoord == 'C') 
-      return xOrRho;
-    else 
-      return (Math.cos(Math.toRadians(yOrTheta)) * xOrRho);
+    return (Math.cos(Math.toRadians(yOrTheta)) * xOrRho);
   }
   
   public double getY()
   {
-    if(typeCoord == 'C') 
-      return yOrTheta;
-    else 
-      return (Math.sin(Math.toRadians(yOrTheta)) * xOrRho);
+    return (Math.sin(Math.toRadians(yOrTheta)) * xOrRho);
   }
   
   public double getRho()
