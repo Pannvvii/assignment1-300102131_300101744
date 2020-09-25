@@ -115,7 +115,7 @@ public class PointCP2
       
       double aY;
       double anX;
-      double tempx = getX();
+      double temp = getX();
       aY = getY();
       anX = temp;
       
