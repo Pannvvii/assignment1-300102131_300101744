@@ -44,38 +44,44 @@ public class PointCP2
   {
     if(type != 'C' &&  type != 'P')
       throw new IllegalArgumentException();
+    
     this.xOrRho = xOrRho;
     this.yOrTheta = yOrTheta;
+    System.out.println(yOrTheta);
+    System.out.println(type);
     if(type == 'C')
       this.xOrRho = (Math.sqrt(Math.pow(xOrRho, 2) + Math.pow(yOrTheta, 2)));
       this.yOrTheta = Math.toDegrees(Math.atan2(yOrTheta, xOrRho));
+    System.out.println(yOrTheta);
     typeCoord = 'P';
+    System.out.println(yOrTheta);
   }
-	
   
   //Instance methods **************************************************
  
  
   public double getX()
   {
+    System.out.println(yOrTheta);
     return (Math.cos(Math.toRadians(yOrTheta)) * xOrRho);
   }
   
   public double getY()
   {
+    System.out.println(yOrTheta);
     return (Math.sin(Math.toRadians(yOrTheta)) * xOrRho);
   }
   
   public double getRho()
   {
-
+    System.out.println(yOrTheta);
     return xOrRho;
 
   }
   
   public double getTheta()
   {
-
+    System.out.println(yOrTheta);
     return yOrTheta;
 
   }
@@ -111,7 +117,7 @@ public class PointCP2
       double temp = getX();
       aY = getY();
       anX = temp;
-      
+
       PointCP3 yoint = new PointCP3('C', anX, aY);
       return yoint;
       //typeCoord = 'C';	//Change coord type identifier
@@ -162,6 +168,7 @@ public class PointCP2
    */
   public String toString()
   {
+    System.out.println(yOrTheta);
     return "Stored as " + (typeCoord == 'C' 
        ? "Cartesian  (" + getX() + "," + getY() + ")"
        : "Polar [" + getRho() + "," + getTheta() + "]") + "\n";
