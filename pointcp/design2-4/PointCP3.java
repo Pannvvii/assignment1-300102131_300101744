@@ -89,8 +89,8 @@ public class PointCP3
       //Calculate RHO and THETA
       double temp = getRho();
 	  double temp2 = getTheta();
-	  System.out.println(temp);
-	  System.out.println(temp2);
+	  //System.out.println(temp);
+	  //System.out.println(temp2);
       double yTheta = temp2;
 	  
       double xRho = temp;
@@ -98,7 +98,7 @@ public class PointCP3
 	  char TempType;
       TempType = 'P';  //Change coord type identifier
 	  
-	  System.out.println(yTheta);
+	  //System.out.println(yTheta);
 	  
 		PointCP2 PointNew = new PointCP2(TempType, xRho, yTheta);
 

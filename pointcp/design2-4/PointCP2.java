@@ -42,7 +42,7 @@ public class PointCP2
    */
   public PointCP2(char type, double xOrRho, double yOrTheta)
   {
-	  System.out.println(yOrTheta);
+	  //System.out.println(yOrTheta);
     if(type != 'C' &&  type != 'P')
       throw new IllegalArgumentException();
     this.xOrRho = xOrRho;

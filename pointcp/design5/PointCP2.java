@@ -21,7 +21,7 @@ public class PointCP2 extends PointCP5
    */
   public PointCP2(char type, double xOrRho, double yOrTheta)
   {
-	  System.out.println(yOrTheta);
+	  //System.out.println(yOrTheta);
     if(type != 'C' &&  type != 'P')
       throw new IllegalArgumentException();
     this.xOrRho = xOrRho;
@@ -29,7 +29,7 @@ public class PointCP2 extends PointCP5
     if(type == 'C'){
       this.xOrRho = (Math.sqrt(Math.pow(xOrRho, 2) + Math.pow(yOrTheta, 2)));
       this.yOrTheta = Math.toDegrees(Math.atan2(yOrTheta, xOrRho));
-	  System.out.println(this.yOrTheta);
+	  //System.out.println(this.yOrTheta);
 	}
     typeCoord = 'P';
   }
