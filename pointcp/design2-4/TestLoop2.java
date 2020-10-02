@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class TestLoop2 {
     public static void main(String[] args){
+        long tim = System.nanoTime();
         Random rand = new Random();
         int x = rand.nextInt(100);
         int y = rand.nextInt(100);
@@ -14,7 +15,7 @@ public class TestLoop2 {
         }
         PointCP2 test = new PointCP2(ty,x,y);
         PointCP2 test2 = new PointCP2(ty,y,x);
-        for (int i=0; i<100000;i++){
+        for (int i=0; i<35000000;i++){
             test.getX();
             test.getY();
             test.getTheta();
@@ -32,5 +33,10 @@ public class TestLoop2 {
             test.toString();
             //System.out.println(test.toString());
         }
+        long time = System.nanoTime();
+        long milisec = (time-tim)/1000000;
+        long sec = milisec/1000;
+        System.out.println("Time in miliseconds: "+milisec);
+        System.out.println("Time in seconds: "+sec);
     }
 }
