@@ -149,6 +149,93 @@ Stored as Polar [20.0,10.0]
 
 
 ```
-Add the output from your Design 5 tests
-here
+Design 2 implemented with 5:
+
+
+C:\Users\corey\Desktop\GitHub\Assignments\Assignment 1\assignment1-300102131_300101744\pointcp\design5>java PointCP2Test
+Cartesian-Polar Coordinates Conversion Program
+Enter the type of Coordinates you are inputting ((C)artesian / (P)olar): C
+Enter the value of X using a decimal point(.): 5.0
+Enter the value of Y using a decimal point(.): 10.0
+
+You entered:
+Stored as Polar [11.180339887498949,63.43494882292201]
+
+
+After asking to store as Cartesian:
+Stored as Cartesian  (5.000000000000002,10.0)
+
+
+After asking to store as Polar:
+Stored as Polar [11.180339887498949,63.43494882292201]
+
+
+
+
+
+C:\Users\corey\Desktop\GitHub\Assignments\Assignment 1\assignment1-300102131_300101744\pointcp\design5>java PointCP2Test
+Cartesian-Polar Coordinates Conversion Program
+Enter the type of Coordinates you are inputting ((C)artesian / (P)olar): P
+Enter the value of Rho using a decimal point(.): 20.0
+Enter the value of Theta using a decimal point(.): 10.0
+
+You entered:
+Stored as Polar [20.0,10.0]
+
+
+After asking to store as Cartesian:
+Stored as Cartesian  (19.69615506024416,3.4729635533386065)
+
+
+After asking to store as Polar:
+Stored as Polar [20.0,10.0]
+
+
+
+
+Design 3 implemented with 5:
+
+
+
+C:\Users\corey\Desktop\GitHub\Assignments\Assignment 1\assignment1-300102131_300101744\pointcp\design5>java PointCP3Test
+Cartesian-Polar Coordinates Conversion Program
+Enter the type of Coordinates you are inputting ((C)artesian / (P)olar): C
+Enter the value of X using a decimal point(.): 5.0
+Enter the value of Y using a decimal point(.): 10.0
+
+You entered:
+Stored as Cartesian  (5.0,10.0)
+
+
+After asking to store as Cartesian:
+Stored as Cartesian  (5.0,10.0)
+
+
+After asking to store as Polar:
+Stored as Polar [11.180339887498949,63.43494882292201]
+
+
+
+
+C:\Users\corey\Desktop\GitHub\Assignments\Assignment 1\assignment1-300102131_300101744\pointcp\design5>java PointCP3Test
+Cartesian-Polar Coordinates Conversion Program
+Enter the type of Coordinates you are inputting ((C)artesian / (P)olar): P
+Enter the value of Rho using a decimal point(.): 20.0
+Enter the value of Theta using a decimal point(.): 10.0
+
+You entered:
+Stored as Cartesian  (19.69615506024416,3.4729635533386065)
+
+
+After asking to store as Cartesian:
+Stored as Cartesian  (19.69615506024416,3.4729635533386065)
+
+
+After asking to store as Polar:
+Stored as Polar [19.999999999999996,10.0]
+
+
 ```
+
+
+
