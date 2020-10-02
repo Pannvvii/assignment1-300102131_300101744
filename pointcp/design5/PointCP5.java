@@ -69,13 +69,13 @@ public abstract class PointCP5
   /**
    * Converts Cartesian coordinates to Polar coordinates.
    */
-  abstract void convertStorageToPolar();
+  //abstract void convertStorageToPolar();
 
 	
   /**
    * Converts Polar coordinates to Cartesian coordinates.
    */
-  abstract void convertStorageToCartesian();
+  //abstract void convertStorageToCartesian();
 
 
   /**
