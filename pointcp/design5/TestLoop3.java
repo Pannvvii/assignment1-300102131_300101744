@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class TestLoop2 {
+public class TestLoop3 {
     public static void main(String[] args){
         long tim = System.nanoTime();
         Random rand = new Random();
