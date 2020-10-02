@@ -50,7 +50,6 @@ public class PointCP2
     if(type == 'C'){
       this.xOrRho = (Math.sqrt(Math.pow(xOrRho, 2) + Math.pow(yOrTheta, 2)));
       this.yOrTheta = Math.toDegrees(Math.atan2(yOrTheta, xOrRho));
-	  System.out.println(this.yOrTheta);
 	}
     typeCoord = 'P';
   }
